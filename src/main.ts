@@ -5,8 +5,7 @@ import * as cors from 'cors';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: 'http://localhost:5173/', // замените на URL вашего клиента
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    origin: 'https://miles101armales.github.io', // замените на ваш домен
     credentials: true,
   });
   app.use(cors());

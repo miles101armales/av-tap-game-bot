@@ -5,6 +5,7 @@ import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { User } from './users/entities/user.entity';
+import { TelegramModule } from './telegram/telegram.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { User } from './users/entities/user.entity';
       }),
       inject: [ConfigService],
     }),
+    TelegramModule,
   ],
   controllers: [AppController],
   providers: [AppService],
