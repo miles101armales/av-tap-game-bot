@@ -10,7 +10,7 @@ export class StartCommand extends Command {
               {
                 text: 'Запустить приложение',
                 web_app: {
-                  url: 'https://miles101armales.github.io/av-tap-game-frontend/',
+                  url: 'https://finance-av.ru/auth',
                 },
               },
             ],
